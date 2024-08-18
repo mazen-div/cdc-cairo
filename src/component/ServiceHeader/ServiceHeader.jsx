@@ -1,0 +1,23 @@
+import ArrowIcon from "../../Icons/Arrow";
+import PlayIcon from "../../Icons/PlayIcon";
+import NavBar from "../navbar/Navbar";
+
+const ServiceHeader = () => {
+    return ( 
+        <div className="ServiceHeader"   >
+<NavBar />
+<div className="container MainBanner"  >
+<div className="d-flex flex-column align-items-center">
+    <h2>
+    we care about you
+    </h2>
+<p>
+Donec risus nulla, efficitur ut sodales in, facilisis sed odio.
+</p>
+</div>
+</div>
+        </div>
+     );
+}
+ 
+export default ServiceHeader;
