@@ -33,7 +33,7 @@ const DocCard = ({state}) => {
             <a href={state?.twitter}>
                 <TwitterFooter />
             </a>
-            <a href={state?.Linkedin} >
+            <a href={state?.linkedin} >
                 <LinkedinFooter />
             </a>
             </div>

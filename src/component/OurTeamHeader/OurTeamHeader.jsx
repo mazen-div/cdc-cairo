@@ -9,10 +9,10 @@ const OurTeamHeader = () => {
 <div className="container MainBanner"  >
 <div className="d-flex flex-column align-items-center">
     <h2>
-    our team is special
+    Our team is special
     </h2>
 <p>
-so let us introduce you DR. Mona
+so let us introduce Our Doctor
 </p>
 </div>
 </div>

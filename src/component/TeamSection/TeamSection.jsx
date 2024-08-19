@@ -116,7 +116,7 @@ const TeamSection = () => {
                   );
                 })}
               </Swiper>
-              <div className="ArrowContainer">
+              <div className="ArrowContainer" id="TAC">
                 <div className="PervArrow">
                   <Arrows />
                 </div>
