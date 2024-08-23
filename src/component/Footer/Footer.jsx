@@ -5,115 +5,130 @@ import TwitterFooter from "../../Icons/TwitterFooter";
 import Logo from "../../assets/images/Logo.png";
 import { useEffect, useState } from "react";
 import { db } from "./../../firebase";
-import { doc, getDoc, collection, addDoc, updateDoc,arrayRemove, getDocs } from "firebase/firestore";
+import {
+  doc,
+  getDoc,
+  collection,
+  addDoc,
+  updateDoc,
+  arrayRemove,
+  getDocs,
+} from "firebase/firestore";
 const Footer = () => {
   const [text, setText] = useState({});
   const [images, setImages] = useState([]);
+  const [email, setEmail] = useState("");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(email);
+    
+    try {
+      const docRef = collection(db, "Subsicribed");
+      await addDoc(docRef, {
+        email: email,
+        Date: new Date().toLocaleDateString(),
+
+      });
+      // Uncomment the following lines if you want to add a new document
+      // await addDoc(collection(db, "OurClinc"), {
+      //   items: ['asda', 'dasdas', 'asdas']
+      // });
+
+    } catch (err) {
+      console.error("Error updating document: ", err);
+    }
+
+  };
   const fetchCards = async () => {
     try {
       const collectionRef = doc(db, "contact", "text");
 
-
       const snapshot = await getDoc(collectionRef);
-  setText(snapshot.data())
- 
-    
-
-
+      setText(snapshot.data());
     } catch (error) {
       console.error("Error fetching cards:", error);
     }
   };
-  useEffect(()=>{
-    fetchCards()
-  },[])
+  useEffect(() => {
+    fetchCards();
+  }, []);
   return (
     <div className="footer">
       <div className="">
         <div className="row">
           <div className="col-lg-3 mt-2">
             <img src={Logo} width={"250px"} />
-          
           </div>
-        <div className="col-lg-2 mt-2">
+          <div className="col-lg-2 mt-2">
             <ul>
-                <li>
-                    <a href="/#home">
-                    Home
-                    </a>
-                </li>
-                <li>
-                    <a href="/#about">
-                    About
-                    </a>
-                </li>
-                <li>
-                <a href="/#services">
-                    Services
-                    </a>
-                </li>
-                 <li>
-                    <a href="/#cases"> 
-                    Cases
-                    </a>
-                </li>
+              <li>
+                <a href="/#home">Home</a>
+              </li>
+              <li>
+                <a href="/#about">About</a>
+              </li>
+              <li>
+                <a href="/#services">Services</a>
+              </li>
+              <li>
+                <a href="/#cases">Cases</a>
+              </li>
             </ul>
-        </div>
-        <div className="col-lg-2 mt-2">
-        <ul className="secondul">
-                <li>
-                    <a href="#team">
-                    Team
-                    </a>
-                </li>
-                <li>
-                    <a href="#testimonials">
-                    Testimonials
-                    </a>
-                </li>
-                <li>
-                    <a href="#contact">
-                    Contact
-                    </a>
-                </li>
-                 <li>
-                    <a href="#cases">
-                    Gallery
-                    </a>
-                </li>
+          </div>
+          <div className="col-lg-2 mt-2">
+            <ul className="secondul">
+              <li>
+                <a href="#team">Team</a>
+              </li>
+              <li>
+                <a href="#testimonials">Testimonials</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+              <li>
+                <a href="#cases">Gallery</a>
+              </li>
             </ul>
-        </div>
-        <div className="col-lg-2 mt-2">
-            <span>
-            FOLLOW US
-            </span>
+          </div>
+          <div className="col-lg-2 mt-2">
+            <span>FOLLOW US</span>
             <div className="d-flex mt-3 gap-3">
-<a href={text.facebook}>
-<Facebookfotter />
-</a>
-<a href={text.linkedin}>
-<LinkedinFooter />
-</a>
-
+              <a href={text.facebook}>
+                <Facebookfotter />
+              </a>
+              <a href={text.linkedin}>
+                <LinkedinFooter />
+              </a>
             </div>
             <div className="d-flex mt-3 gap-3">
-            <a href={text.twitter}>
-            <TwitterFooter />
-</a>
-<a href={text.instagram}>
-<Instagram />
-</a>
-
+              <a href={text.twitter}>
+                <TwitterFooter />
+              </a>
+              <a href={text.instagram}>
+                <Instagram />
+              </a>
             </div>
-        </div>
-        <div className="col-lg-3 mt-2 d-flex align-items-center">
-        <div className="input-group">
-    <input type="email" className="input" id="Email" name="Email" placeholder="cdc@admin.io" autocomplete="off" />
-    <input className="button--submit" value="Subscribe" type="submit" />
-</div>
-
-    
-        </div>
+          </div>
+          <div className="col-lg-3 mt-2 d-flex align-items-center">
+            <div className="input-group">
+              <input
+                type="email"
+                className="input"
+                id="Email"
+                name="Email"
+                placeholder="cdc@admin.io"
+                autocomplete="off"
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <input
+                className="button--submit"
+                value="Subscribe"
+                type="submit"
+                onClick={handleSubmit}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

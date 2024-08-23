@@ -79,8 +79,8 @@ const Cases = ({ casePage }) => {
                   Orthodontist
                 </div>
                 <div
-                  className={activeBtn === "Oral Surgeon" ? "active Btnn" : "Btnn"}
-                  onClick={() => setActiveBtn("Oral Surgeon")}
+                  className={activeBtn === "OralSurgeon" ? "active Btnn" : "Btnn"}
+                  onClick={() => setActiveBtn("OralSurgeon")}
                 >
                   Oral Surgeon
                 </div>

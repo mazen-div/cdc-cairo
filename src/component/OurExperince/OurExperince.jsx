@@ -78,7 +78,7 @@ const OurExperince = ({state}) => {
      <div className="row">
      {
       state?.additionalImages?.map((img)=>(  <div className="col-lg-3 mt-4 col-md-6 col-12">
-        <img src={img} /> </div>))
+        <img src={img} style={{width:"100%",height:'100%'}} /> </div>))
      }
       
       
