@@ -69,5 +69,6 @@ cards?.map(item=>(
     </div>
   );
 };
+  
 
 export default MidBanner;
