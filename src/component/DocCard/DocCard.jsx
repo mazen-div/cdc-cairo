@@ -26,17 +26,7 @@ const DocCard = ({state}) => {
                 state?.Biography
 }
 </div>
-            <div className="social">
-            <a href={state?.facebook} class="">
-                <Facebookfotter />
-            </a>
-            <a href={state?.twitter}>
-                <TwitterFooter />
-            </a>
-            <a href={state?.linkedin} >
-                <LinkedinFooter />
-            </a>
-            </div>
+       
         </div>
     </div>
 </div>

@@ -24,7 +24,7 @@ const SevicePage = () => {
 <div className="container">
 <div className="d-flex flex-column align-items-center ServiceHeaderr">
 <h2>
-Oral Surgery
+CDC SERVICES
             </h2>
             <div className="linerGrad"></div>
            

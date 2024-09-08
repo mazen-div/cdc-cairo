@@ -104,12 +104,7 @@ const TeamSection = () => {
                 <p class="title">{card?.title}</p>
              
               </div>
-              <div className="social">
-
-              <a href={card?.facebook} class=""> <Facebook /></a>
-              <a href={card?.twitter} ><Twitter /></a>
-              <a href={card?.linkedin} > <Linkedin /> </a>
-              </div>
+              
              </div>
             </div>
                     </SwiperSlide>

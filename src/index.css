@@ -551,7 +551,7 @@ font-weight: 500;
 .contactCard{
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 15px;
   min-width: 240px;
   justify-content: center;
   align-items: center;
@@ -1065,7 +1065,6 @@ bottom: -75px;
 }
 #contact p{
   font-size: 20px;
-  margin-top: 20px;
 }
 @media(max-width: 768px){
  .OurClincBtns div{
@@ -1123,4 +1122,13 @@ bottom: -75px;
 }
 #Cliniciconid{
   width: 60px;
+}
+#navimg {
+  width: 180px;
+}
+#xicon {
+  width: 24px;
+}
+.swpind .swiper-pagination{
+  margin-top: 50px;
 }

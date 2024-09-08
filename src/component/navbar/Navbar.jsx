@@ -70,7 +70,7 @@ const NavBar = () => {
             className={navBackground ? "navbar-scroll" : ""}
         >
             <Container>
-                <Navbar.Brand href="/#home"><img src={Logo} alt="Logo" /></Navbar.Brand>
+                <Navbar.Brand href="/#home"><img id='navimg' src={Logo} alt="Logo" /></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" className="custom-toggler">
                     <span className="custom-toggler-icon"></span>
                 </Navbar.Toggle>

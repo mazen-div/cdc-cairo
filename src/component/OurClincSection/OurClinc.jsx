@@ -41,19 +41,34 @@ const OurClinc = () => {
       <div className="row">
         <div className="col-lg-6">
           <section className="OurClinc"  id="about">
-            <h2 style={{textTransform:"uppercase",fontWeight:"600"}}>
-     {
+
+
+          <section id="home">
+            <h2 style={{color:"black"}}>
+            {
       text?.title
-     }
+     } <span style={{ color: "#8F6F48" ,textTransform:"uppercase"}}> CDC</span>
             </h2>
             <div className="linerGrad"></div>
-           
-            <p>
-              {
-                  text?.subTitle
-              }
-         
+            <h3 style={{ color: "black"}}>
+              <span style={{ color: "#8F6F48" }}>C</span>omputerized{" "}
+              <span style={{ color: "#8F6F48" }}>D</span>ental{" "}
+              <span style={{ color: "#8F6F48" }}>C</span>linic
+            </h3>
+            <p style={{color:"black"}}>
+            Proin placerat posuere malesuada. Nulla ac condimentum diam, id
+            pulvinar orci. Morbi eu sapien nibh.
+              
             </p>
+            </section>
+
+
+
+
+
+
+         
+           
             <div className="d-flex gap-5 align-items-center flex-wrap HeaderBtns OurClincBtns">
               <div className="d-flex gap-2 align-items-center">
                 <img src={Group1} id="Cliniciconid" />

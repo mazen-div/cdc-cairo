@@ -112,7 +112,9 @@ const ChatBtn = () => {
       <div className="d-flex justify-content-end">
         <div className="MainChat">
           {active ? (
-            <img
+            <img 
+            id="xicon"
+          
               src={CloseIcon}
               alt="Close Icon"
               onClick={() => setActive(!active)}
