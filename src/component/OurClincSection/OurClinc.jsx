@@ -97,7 +97,7 @@ const OurClinc = () => {
             </div>
           </section>
         </div>
-        <div className="col-lg-6" style={{marginTop:"100px"}}>
+        <div className="col-lg-6 HomeHeaderImagesContainer" style={{marginTop:"100px"}}>
           <>
             <Swiper
               effect={"cards"}
@@ -110,7 +110,7 @@ const OurClinc = () => {
                 images?.map((image)=>(
                   <SwiperSlide>
               <div>
-              <img style={{width:"450px",height:"450px",borderRadius:"25px"}} src={image} />
+              <img className="HomeHeaderImages" src={image} />
               </div>
                 </SwiperSlide>))
               }

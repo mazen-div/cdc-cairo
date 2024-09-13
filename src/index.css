@@ -9,14 +9,44 @@ body{
   position:relative;
 }
 .homeHeader {
-  background-image: url("./assets/images/BGVideo.png");
+  position: relative;
   min-height: 80vh;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
   display: flex;
   align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
 
+
+.video-background {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-background video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .homeHeader {
+    min-height: 40vh;
+  }
+  .video-background {
+ 
+    top: 0px;
+
+  }
+  
+  #navimg{
+    width: 130px !important;
+  }
+  
 }
 .swiper-pagination-bullet {
   background-color: #cccccc; /* Default color for inactive bullets */
@@ -291,6 +321,7 @@ border-radius: 15px;}
   border-radius: 15px;
 right: 0px;
   top: 0px;
+  cursor: pointer;
 
 }
 .service-card:hover .HoverDiv{
@@ -1016,7 +1047,7 @@ font-size: 15px;
 bottom: -75px;
 }
 #SAC{
-  bottom: -75px;
+  bottom: -18px;
 }
 #TAC {
   bottom: -45px;
@@ -1131,4 +1162,51 @@ bottom: -75px;
 }
 .swpind .swiper-pagination{
   margin-top: 50px;
+}
+.Servcis-Cards .swiper {
+  min-height: 450px;
+}
+@media (max-width: 768px) {
+  .Servcis-Cards .swiper {
+    min-height: 410px;
+  }
+  #SAC{
+    bottom: -10px;
+  }
+}
+.HomeHeaderImages{
+  width: 450px;
+  height: 450px;
+  border-radius: 25px;
+}
+
+@media (max-width: 768px) {
+  .OurTeamHader h2
+  {
+    font-size: 27px;
+    margin-bottom: 5px;
+  }
+  .OurTeamHader p
+  {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .HomeHeaderImages{
+    width: 300px;
+    height: 300px;
+  }
+  .HomeHeaderImagesContainer{
+    margin-top: 0px !important;
+  }
+ 
+  .CaseHeader h2
+  {
+    font-size: 27px;
+    margin-bottom: 5px;
+  }
+  .CaseHeader p
+  {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
 }

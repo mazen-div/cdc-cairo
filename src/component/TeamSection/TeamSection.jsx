@@ -60,7 +60,7 @@ const TeamSection = () => {
           </section>
         </div>
         <div className="col-lg-12 " style={{marginTop:"80px"}}>
-          <div className="row">
+          <div className="">
           {
             cards && (
               <div class="row Servcis-Cards">

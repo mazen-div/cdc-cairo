@@ -67,7 +67,7 @@ const NavBar = () => {
             bg={"transparent"} 
             expand="lg" 
             fixed="top"
-            className={navBackground ? "navbar-scroll" : ""}
+            className={ "navbar-scroll" }
         >
             <Container>
                 <Navbar.Brand href="/#home"><img id='navimg' src={Logo} alt="Logo" /></Navbar.Brand>

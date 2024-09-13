@@ -88,7 +88,7 @@ const OurServices = () => {
                   return (
                     <SwiperSlide >
                       <div class="service-card p-3"  onClick={() => handleNavigate(card)}>
-                        <div className="HoverDiv">
+                        <div className="HoverDiv"      onClick={() => handleNavigate(card)}>
                           <div className="ulClass" >
                             {
                               card?.homeFeat?.map((item)=>(
