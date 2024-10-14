@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
 import "swiper/css/pagination";
-import { EffectCards, Pagination } from "swiper/modules";
+import { EffectCards, Pagination,Navigation } from "swiper/modules";
 // import required modules
 import SliderPic from "../../assets/images/Pic.png";
 import Group2 from "../../assets/images/Group2.png";
@@ -15,6 +15,7 @@ import PlayIcon from "../../Icons/PlayIcon";
 import { useEffect, useState } from "react";
 import { db } from "./../../firebase";
 import { doc, getDoc, collection, addDoc, updateDoc,arrayRemove, getDocs } from "firebase/firestore";
+import Arrows from "../../Icons/Arrows";
 const OurClinc = () => {
   const [text, setText] = useState({});
   const [images, setImages] = useState([]);
@@ -83,7 +84,7 @@ const OurClinc = () => {
                }
               </div>
             </div>
-            <div className="ulClass">
+            {/* <div className="ulClass">
               {
                 text?.items?.map((item)=>(
                   <div className="UlItem">
@@ -94,16 +95,20 @@ const OurClinc = () => {
               }
            
              
-            </div>
+            </div> */}
           </section>
         </div>
         <div className="col-lg-6 HomeHeaderImagesContainer" style={{marginTop:"100px"}}>
-          <>
+          <div style={{position:'relative'}}>
             <Swiper
               effect={"cards"}
               pagination={true}
               grabCursor={true}
-              modules={[EffectCards, Pagination]}
+              navigation={{
+                nextEl: ".NextArrowws",
+                prevEl: ".PervArrowws",
+              }}
+              modules={[EffectCards, Pagination,Navigation]}
               className="mySwiper"
             >
               {
@@ -116,7 +121,15 @@ const OurClinc = () => {
               }
             
             </Swiper>
-          </>
+            <div className="ArrowContainer" style={{left:'50%',transform:'translateX(-50%)',bottom:'-70px'}} id="SAC">
+                <div className="PervArrowws">
+                  <Arrows />
+                </div>
+                <div className="NextArrowws" id="nextErr">
+                  <Arrows />
+                </div>
+              </div>
+          </div>
         </div>
       </div>
     </div>

@@ -293,9 +293,13 @@ border-radius: 15px;}
 
 .service-card {
   background: #fff;
-  height: 100%;
+  height: 100%;justify-content: center;
+  align-items: center;
   width: 100%;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
@@ -769,6 +773,17 @@ cursor: pointer;
   cursor: pointer;
   align-items: center;
 }
+.NextArrowws{
+  background-color: #343434;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+cursor: pointer;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+}
 .PervArrow
 {
   background-color: #343434;
@@ -784,6 +799,21 @@ cursor: pointer;
   align-items: center;
 }
 .PervArroww
+{
+  background-color: #343434;
+  border-radius: 50%;
+  width: 50px;
+
+  height: 50px;
+  display: flex;
+  transform: rotate(180deg);
+  justify-content: center;
+  cursor: pointer;
+cursor: pointer;
+
+  align-items: center;
+}
+.PervArrowws
 {
   background-color: #343434;
   border-radius: 50%;
@@ -1175,9 +1205,9 @@ bottom: -75px;
   }
 }
 .HomeHeaderImages{
-  width: 450px;
-  height: 450px;
-  border-radius: 25px;
+  width: 370px;
+  height: 370px;
+  border-radius: 29px;
 }
 
 @media (max-width: 768px) {

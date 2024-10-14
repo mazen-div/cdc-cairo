@@ -112,9 +112,9 @@ const OurServices = () => {
                           <img src={card?.iconUrl} alt="Teeth Root Canals" />
                         </div>
                         <h5>{card?.title}  </h5>
-                        <p>
+                        {/* <p>
                          {card?.homeTxt}
-                        </p>
+                        </p> */}
                       </div>
                     </SwiperSlide>
                   );
