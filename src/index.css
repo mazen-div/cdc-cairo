@@ -1240,3 +1240,19 @@ bottom: -75px;
     margin-bottom: 15px;
   }
 }
+
+.dentalToursim{
+  align-items: start !important;
+  margin-inline-start: 80px;
+}
+@media (max-width: 768px) {
+  .dentalToursim{
+    margin-inline-start: 10px;
+    align-items: center !important;
+    text-align: center !important;
+
+  }
+  .dentalToursim p{
+    text-align: center !important;
+  }
+}

@@ -10,6 +10,7 @@ import TeamSection from "../component/TeamSection/TeamSection";
 import ChatBtn from "../component/ChatBtn/ChatBtn";
 
 import NavBar from "../component/navbar/Navbar";
+import MiBannerSecond from "../component/MiBannerSecond/MidBanner";
 
 const LandingPage = () => {
     return ( 
@@ -17,6 +18,7 @@ const LandingPage = () => {
 <HomeHeader />
 <OurClinc />
 <OurServices/>
+<MiBannerSecond />
 <Cases />
 <MidBanner />
 <TeamSection />
