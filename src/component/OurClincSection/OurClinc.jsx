@@ -84,18 +84,16 @@ const OurClinc = () => {
                }
               </div>
             </div>
-            {/* <div className="ulClass">
-              {
-                text?.items?.map((item)=>(
-                  <div className="UlItem">
-                  <div></div>
-              {item}
-                </div>
-                ))
-              }
-           
+            <div className="ulClass">
+           {
+            text?.items?.length >0 ?  <div className="UlItem">
+            <div></div>
+        {     text?.items[0]}
+          </div>:null
+           }
+        
              
-            </div> */}
+            </div>
           </section>
         </div>
         <div className="col-lg-6 HomeHeaderImagesContainer" style={{marginTop:"100px"}}>

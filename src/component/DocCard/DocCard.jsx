@@ -19,7 +19,7 @@ const DocCard = ({state}) => {
     <div className="col-lg-6">
         <div className="DocDetails">
             <h2>{state?.Name}</h2>
-            <p>{state?.title}</p>
+            <p>{state?.Title}</p>
 
             <h3>Biography</h3>
             <div className="textInfo">{

@@ -52,7 +52,7 @@ const OurExperince = ({state}) => {
             </div>
             <div className="ulClass">
             {
-              state?.feat1?.map(item=>(
+              state?.feat2?.map(item=>(
                 <div className="UlItem">
                 <div></div>
            {  item}

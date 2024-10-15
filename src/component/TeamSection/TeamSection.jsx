@@ -101,7 +101,7 @@ const TeamSection = () => {
               </div>
               <div class="text-container">
                 <p class="name">{card?.Name}</p>
-                <p class="title">{card?.title}</p>
+                <p class="title">{card?.Title}</p>
              
               </div>
               
