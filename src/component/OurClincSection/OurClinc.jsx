@@ -85,13 +85,15 @@ const OurClinc = () => {
               </div>
             </div>
             <div className="ulClass">
-           {
-            text?.items?.length >0 ?  <div className="UlItem">
-            <div></div>
-        {     text?.items[0]}
-          </div>:null
-           }
-        
+              {
+                text?.items?.map((item)=>(
+                  <div className="UlItem">
+                  <div></div>
+              {item}
+                </div>
+                ))
+              }
+           
              
             </div>
           </section>
