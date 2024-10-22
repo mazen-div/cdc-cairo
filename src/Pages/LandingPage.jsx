@@ -18,10 +18,10 @@ const LandingPage = () => {
 <HomeHeader />
 <OurClinc />
 <OurServices/>
-<MiBannerSecond />
-<Cases />
-<MidBanner />
+        <Cases />
 <TeamSection />
+<MiBannerSecond />
+<MidBanner />
 <Opionin />
 <GetInTouch />
 <Footer />
