@@ -59,7 +59,7 @@ comfortable experience, an unforgettable trip, and significant savings.
 If you're short on time, we’ve got you covered! Our clinic is equipped to complete most
 procedures in just one or two appointments. Plus, we’re conveniently located just 10
 minutes from the airport and surrounded by top-notch hotels.
-Contact us to schedule your virtual consultation and learn more about our packages!</p>
+Contact us to schedule your virtual consultation and learn more about our packages.!</p>
 
 
 
