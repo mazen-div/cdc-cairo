@@ -60,17 +60,7 @@ If you're short on time, we’ve got you covered! Our clinic is equipped to comp
 procedures in just one or two appointments. Plus, we’re conveniently located just 10
 minutes from the airport and surrounded by top-notch hotels.
 Contact us to schedule your virtual consultation and learn more about our packages!</p>
-<h2 style={{marginTop:'30px'}}>
-We understand you 
 
-</h2>
-<div className="linerGrad"></div>
-
-<p style={{textAlign:'start'}}>
-We believe that effective communication is essential for success, which is why our
-team is fluent in English, French, Dutch, and Arabic to ensure a seamless experience
-for you.
-</p>
 
 
 <div className="d-flex gap-5 align-items-center flex-wrap HeaderBtns">
