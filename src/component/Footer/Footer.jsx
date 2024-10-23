@@ -2,7 +2,7 @@ import Facebookfotter from "../../Icons/Facebookfotter";
 import Instagram from "../../Icons/Instagram";
 import LinkedinFooter from "../../Icons/LinkedinFooter";
 import TwitterFooter from "../../Icons/TwitterFooter";
-import Logo from "../../assets/images/Logo.png";
+import Logo from "../../assets/images/Logo2.png";
 import { useEffect, useState } from "react";
 import { db } from "./../../firebase";
 import {

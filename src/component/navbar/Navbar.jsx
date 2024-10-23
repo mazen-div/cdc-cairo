@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link, useNavigate } from 'react-router-dom';
-import Logo from "../../assets/images/Logo.png";
+import Logo from "../../assets/images/Logo2.png";
 
 const NavBar = () => {
     const [navBackground, setNavBackground] = useState(false);
