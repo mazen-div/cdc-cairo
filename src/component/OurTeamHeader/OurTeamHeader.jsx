@@ -12,7 +12,7 @@ const OurTeamHeader = () => {
     Our team is special
     </h2>
 <p>
-so let us introduce Our Doctor
+so let us introduce Our Doctors
 </p>
 </div>
 </div>

@@ -7,15 +7,14 @@ import ServiceHeader from "../component/ServiceHeader/ServiceHeader";
 import Sevice2 from "../assets/images/Sevice2.png"
 import Sevice1 from "../assets/images/Sevice1.png"
 import { useLocation } from "react-router-dom";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 
 
 const SevicePage = () => {
   const {state}=useLocation()
+  
   console.log(state)
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  
 
     return ( 
     <div>
@@ -37,7 +36,8 @@ CDC SERVICES
             <section className="Testimonials">
               <h2 style={{fontSize:'22px'}} >{state?.firstTitle} </h2>
             
-              <p>
+              <p style={{            whiteSpace: 'pre-wrap', // Ensures line breaks and spaces are preserved
+}}>
             {
               state?.firstText
 }</p>
@@ -76,7 +76,8 @@ CDC SERVICES
             <section className="Testimonials">
               <h2 style={{fontSize:'22px'}} >  {state?.secondTitle}</h2>
             
-              <p>
+              <p style={{            whiteSpace: 'pre-wrap', // Ensures line breaks and spaces are preserved
+}}>
            {state?.secondtext} </p>
           <div className="d-flex flex-wrap">
 

@@ -38,18 +38,16 @@ const MidBanner = () => {
   },[])
 
   return (
-    <div className=" MidBanner" >
+    <div className=" MidBanner"id="langmid" >
       <div className="row align-items-center">
-        <div className="col-lg-8"><section  className="OurClinc" id=""   >
+        <div className="col-lg-12"><section  className="OurClinc" id=""   >
 <h2>
 we understand you
 </h2>
 <div className="linerGrad"></div>
 
 <p>
-Vestibulum venenatis, libero nec malesuada maximus, leo quam ultricies
-enim, eu rhoncus tortor dui at lorem. Nunc interdum, leo ac consequat
-pellentesque.</p>
+No matter where you're from or what language you speak, we can connect with you on a deeper level. Our ability to communicate across linguistic and cultural boundaries allows us to bridge gaps and foster understanding.</p>
 <div className="d-flex gap-5 align-items-center flex-wrap HeaderBtns">
   {
 cards?.map(item=>(
@@ -62,9 +60,7 @@ cards?.map(item=>(
   
 </div>
 </section></div>
-        <div className="col-lg-4 d-flex justify-content-center">
-       <img src={Doctor} />
-        </div>
+        
       </div>
     </div>
   );

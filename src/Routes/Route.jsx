@@ -8,6 +8,8 @@ import LandingPage from "../Pages/LandingPage";
 import OurTeam from "../Pages/OurTeam";
 import SevicePage from "../Pages/Service";
 import CasePage from "../Pages/CasePage";
+import About from "../Pages/About";
+import DentalTourismPage from "../Pages/DentalTourismPage";
 
 
 
@@ -16,6 +18,8 @@ let Routers = createBrowserRouter([
   { path : "OurTeam", element: <OurTeam /> },
   { path : "SevicePage", element: <SevicePage /> },
   { path : "CasePage", element: <CasePage /> },
+  { path : "Aboutus", element: <About /> },
+  { path : "DentalTourism", element: <DentalTourismPage /> },
 
 
   

@@ -11,13 +11,14 @@ import ChatBtn from "../component/ChatBtn/ChatBtn";
 
 import NavBar from "../component/navbar/Navbar";
 import MiBannerSecond from "../component/MiBannerSecond/MidBanner";
+import Divider from "../component/divider/Divider";
 
 const LandingPage = () => {
     return ( 
-    <div>
+    <div >
 <HomeHeader />
 <OurClinc />
-<OurServices/>
+<OurServices className="blockmargin"/>
         <Cases />
 <TeamSection />
 <MiBannerSecond />

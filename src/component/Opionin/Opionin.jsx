@@ -51,11 +51,12 @@ const Opionin = () => {
  <div className="container">
  <div className="row">
         <div className="col-lg-12"><section  className="Testimonials" id="testimonials"   >
-<h2>
-what our clients says about us
+<center>
+<h2 style={{color:"white"}}>
+WHAT PEOPLE ARE SAYING ABOUT US
 </h2>
 <div className="linerGrad"></div>
-
+</center>
 
 </section></div>
         <div className="col-lg-12">
@@ -71,7 +72,8 @@ what our clients says about us
              pagination={true}
               grabCursor={true}
               modules={[ Pagination,Navigation]}
-              className="mySwiperr"
+              
+              className="mySwiperrd"
               breakpoints={{
                 0: {
                   slidesPerView: 1,
@@ -95,7 +97,7 @@ what our clients says about us
                     <SwiperSlide className="">
                     <div className="TestimonialsCard">
                      <div className="d-flex position-relative ">
-       <div> <img src={Qoutes} /></div>
+       <div> <img src={"https://img.icons8.com/?size=100&id=38970&format=png&color=FFFFFF"} style={{width:'20px'}} /></div>
        <div className="d-flex gap-2 Stars" style={{minWidth:'130px'}}>
         {
          rateArray.map((item)=>{

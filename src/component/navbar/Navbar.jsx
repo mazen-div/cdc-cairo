@@ -86,10 +86,10 @@ const NavBar = () => {
                         </Nav.Item>
                         <Nav.Item>
                             <Nav.Link 
-                                onClick={() => handleNavClick('/#about')} 
+                                onClick={() => handleNavClick('/Aboutus')} 
                                 className={`nav-link-custom ${activeSection === 'about' ? 'active' : ''}`}
                             >
-                                About
+                                About us
                             </Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
@@ -108,6 +108,8 @@ const NavBar = () => {
                                 Cases
                             </Nav.Link>
                         </Nav.Item>
+                        
+                       
                         <Nav.Item>
                             <Nav.Link 
                                 onClick={() => handleNavClick('/#team')} 
@@ -116,6 +118,15 @@ const NavBar = () => {
                                 Team
                             </Nav.Link>
                         </Nav.Item>
+                      <Nav.Item>
+                            <Nav.Link 
+                                onClick={() => handleNavClick('/#DentalTour')} 
+                                className={`nav-link-custom ${activeSection === 'DentalTour' ? 'active' : ''}`}
+                            >
+                                Dental Tourism
+                            </Nav.Link>
+                        </Nav.Item>
+
                         <Nav.Item>
                             <Nav.Link 
                                 onClick={() => handleNavClick('/#testimonials')} 

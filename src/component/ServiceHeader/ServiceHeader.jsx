@@ -12,7 +12,7 @@ const ServiceHeader = () => {
     we care about you
     </h2>
 <p>
-Donec risus nulla, efficitur ut sodales in, facilisis sed odio.
+What We Offer
 </p>
 </div>
 </div>

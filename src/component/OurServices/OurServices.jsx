@@ -1,4 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
+import { query, orderBy } from "firebase/firestore"; // Import necessary methods
 
 // Import Swiper styles
 import "swiper/css";
@@ -24,17 +25,28 @@ const OurServices = () => {
   const [cards, setCards] = useState([]);
   const fetchCards = async () => {
     try {
-      const collectionRef = collection(db, "OurService", "services", "Cards");
+      const collectionRef = collection(doc(db, "OurService", "services"), "Cards");
       const snapshot = await getDocs(collectionRef);
+  
+      // Extract and sort cards
       const cardsData = snapshot.docs.map((doc) => ({
         id: doc.id,
         ...doc.data(),
       }));
+  
+      // Sort: Place items with missing createDate at the end
+      cardsData.sort((a, b) => {
+        const dateA = a.createDate ? new Date(a.createDate) : new Date(0); // Default to epoch for missing dates
+        const dateB = b.createDate ? new Date(b.createDate) : new Date(0);
+        return dateB - dateA; // Descending order
+      });
+  
       setCards(cardsData);
     } catch (error) {
       console.error("Error fetching cards:", error);
     }
   };
+  
   useEffect(()=>{
     fetchCards()
   },[])
@@ -44,14 +56,16 @@ const OurServices = () => {
     navigate("/SevicePage",{state});
   };
   return (
-    <section class="" id="services">
-      <div class="container ">
+    <section className="KKS" id="services">
+      <div class="container kl">
+      <section className="OurClinc" >
+            <h2>OUR SERVICES</h2>
+            <div className="linerGrad"></div>
+
+         
+          </section>
         <div class="row services-section">
-          <h2>OUR SERVICES</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean ut
-            est cursus, imperdiet sem ut, molestie nibh.
-          </p>
+        
         </div>
         <div className="px-4">
           {
@@ -62,13 +76,13 @@ const OurServices = () => {
                 slidesPerView={3}
                 spaceBetween={30}
                 navigation={{
-                  nextEl: ".NextArrow",
-                  prevEl: ".PervArrow",
+                  nextEl: ".NArrow",
+                  prevEl: ".PArrow",
                 }}
                 pagination={true}
                 grabCursor={true}
                 modules={[Pagination, Navigation]}
-                className="mySwiperr"
+                className="mySwiperrr"
                 breakpoints={{
                   0: {
                     slidesPerView: 1,
@@ -111,7 +125,9 @@ const OurServices = () => {
                         <div class="service-icon mb-2">
                           <img src={card?.iconUrl} alt="Teeth Root Canals" />
                         </div>
+                        <center>
                         <h5>{card?.title}  </h5>
+                        </center>
                         {/* <p>
                          {card?.homeTxt}
                         </p> */}
@@ -121,10 +137,10 @@ const OurServices = () => {
                 })}
               </Swiper>
               <div className="ArrowContainer" id="SAC">
-                <div className="PervArrow">
+                <div className="PArrow">
                   <Arrows />
                 </div>
-                <div className="NextArrow" id="nextErr">
+                <div className="NArrow" id="nextErr">
                   <Arrows />
                 </div>
               </div>
