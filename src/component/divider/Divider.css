@@ -1,0 +1,37 @@
+.divider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    width: 100%;
+  }
+  
+  .divider {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.3);
+    overflow: hidden;
+    border-radius: 2px;
+  }
+  
+  .divider-wave {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    height: 100%;
+    width: 200%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 100%);
+    animation: wave 2s infinite;
+  }
+  
+  @keyframes wave {
+    from {
+      left: -100%;
+    }
+    to {
+      left: 100%;
+    }
+  }
+  
