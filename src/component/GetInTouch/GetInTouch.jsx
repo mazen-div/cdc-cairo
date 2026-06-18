@@ -82,7 +82,7 @@
 </div>
 
 <div className="col-lg-4 mt-3">
-  <h5 className="text-center text-secondary fw-semibold" style={{marginBottom:"20px"}}>CDC- Newgiza  <span>( Comming Soon ..) </span></h5>
+  <h5 className="text-center text-secondary fw-semibold" style={{marginBottom:"20px"}}>CDC- Newgiza </h5>
   <iframe
     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.0914295893795!2d31.0659375!3d29.989687500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14585100224af9fd%3A0x4f1641ead3197a35!2sMeditown%20Clinics!5e1!3m2!1sen!2seg!4v1746297108745!5m2!1sen!2seg"
     width="100%"
