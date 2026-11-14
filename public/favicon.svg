@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="96" fill="#0b0b0b" />
+  <text
+    x="256"
+    y="290"
+    text-anchor="middle"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="168"
+    font-weight="600"
+    letter-spacing="10"
+    fill="#ffffff"
+  >CDC</text>
+  <path
+    d="M116 346 C186 382, 326 382, 396 346"
+    fill="none"
+    stroke="#c59d5f"
+    stroke-width="12"
+    stroke-linecap="round"
+  />
+</svg>
