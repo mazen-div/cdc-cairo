@@ -84,13 +84,13 @@ const GetInTouch = () => {
         <div className="col-lg-4 mt-3">
           <h5 className="text-center text-secondary fw-semibold" style={{ marginBottom: "20px" }}>CDC- Newgiza </h5>
           <iframe
-            src="https://www.google.com/maps?q=X3Q8%2BV9%20CDC%20Newgiza%20(%20Computerized%20dental%20clinic%20)%2C%20First%206th%20of%20October%2C%20Giza%20Governorate%203294501&ftid=0x145851003ecc6c9f:0x2255090a165b47b5&output=embed"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.093297969612!2d31.0660831!3d29.9896406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145851003ecc6c9f%3A0x2255090a165b47b5!2sCDC%20Newgiza%20(%20Computerized%20dental%20clinic%20)!5e1!3m2!1sen!2seg!4v1795612644623!5m2!1sen!2seg"
             width="100%"
             height="300"
-            style={{ border: 0 }}
             allowFullScreen=""
+            style={{ borderRadius: "10px", border: 0 }}
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
+            referrerPolicy="strict-origin-when-cross-origin"
           ></iframe>
         </div>
 
